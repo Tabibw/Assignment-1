@@ -1,0 +1,137 @@
+.open-sans-normal {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+.main-BG{
+    background-color: #F5F5F5;
+}
+.container{
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    /* padding: 24px 160px 24px 160px; */
+  }
+
+.nav-btn{
+    padding: 10px 25px 10px 25px;
+    border-radius: 8px;
+    border: 1.5px solid rgb(0, 106, 80);
+    color: rgb(0, 106, 80);
+    text-align: center;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(198, 228, 214);
+    border-radius: 24px;
+    gap: 64px;
+    padding: 80px 100px 80px 100px;
+}
+.hero-title{
+    color: rgba(14, 14, 14, 0.5);
+    font-family: Fira Sans;
+    /* font-size: 24px; */
+    font-weight: 500;
+    line-height: 29px;
+    text-align: left;
+}
+.hero-description{
+    color: rgb(14, 14, 14);
+    font-family: Fira Sans;
+    /* font-size: 40px; */
+    font-weight: 700;
+    line-height: 67px;
+    text-align: left;
+}
+.hero-button{
+    align-items: center;
+    gap: 48;
+    padding: 17px 34px 17px 34px;
+    border-radius: 8px;
+    background: rgb(0, 106, 80);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.improvement{
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.pillar{
+    font-size: 30px;
+    font-weight: 700;
+}
+.improvement-container{
+    display: flex;
+    gap: 20px;
+    
+}
+.improve{
+    background-color: white;
+    border-radius: 15px;
+    padding: 23px;
+}
+.improvement-type{
+    font-size: 18px;
+    font-weight: bold;
+}
+.vision{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+.vision-container{
+    display: flex;
+    gap: 24px;
+}
+.vision-box-1{
+    background-color: rgba(84, 144, 245, 0.2);
+    padding: 32px;
+    border-radius: 16px;
+}
+.vision-box-2{
+    background-color: rgb(198, 228, 214);
+    padding: 32px;
+    border-radius: 16px;
+}
+.vision-box-3{
+    background-color: rgb(247, 235, 207);
+    padding: 32px;
+    border-radius: 16px;
+}
+.vision-btn-1{
+    border-radius: 8px;
+    background-color: rgb(84, 144, 245);
+    padding: 10px 19px 10px 19px;
+    border: none;
+    color: white;
+}
+.vision-btn-2{
+    border-radius: 8px;
+    background-color: rgb(9, 161, 92);
+    padding: 10px 19px 10px 19px;
+    border: none;
+    color: white;
+}
+.vision-btn-3{
+    border-radius: 8px;
+    background-color: rgb(255, 194, 57);
+    padding: 10px 19px 10px 19px;
+    border: none;
+    color: white;
+}
+.paragraph-font{
+    font-weight: 500;
+    font-size: 16px;
+}
