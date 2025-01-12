@@ -8,6 +8,14 @@
 .main-BG{
     background-color: #F5F5F5;
 }
+.btn-animation{
+    animation: ease;
+    transition: 350ms;
+}
+.btn-animation:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 .container{
     max-width: 1280px;
     width: 90%;
@@ -87,6 +95,8 @@ nav{
     font-weight: bold;
     margin-top: 24px;
     margin-bottom: 12px;
+
+/* vision */
 }
 .vision{
     display: flex;
@@ -282,6 +292,10 @@ nav{
     margin-top: 20px;
     margin-bottom: 15px;
 }
+.donation-btn:hover{
+    background-color: green;
+    color: white;
+}
 .amount-input{
     text-align: center;
     padding: 15px;
@@ -349,6 +363,7 @@ nav{
     text-align: center;
     padding-left: 20%;
     padding-right: 20%;
+    padding-top: 70px;
     padding-bottom: 20px;
 }
 .footer-icon{
