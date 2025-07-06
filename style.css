@@ -1,381 +1,438 @@
+/* ===== BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* ===== FONTS & GENERAL ===== */
 .open-sans-normal {
-    font-family: "Open Sans", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-.main-BG{
-    background-color: #F5F5F5;
-    margin: 0px;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
-.btn-animation{
-    animation: ease;
-    transition: 350ms;
-}
-.btn-animation:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-.container{
-    max-width: 1280px;
-    width: 90%;
-    margin: 0 auto;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    /* padding: 24px 160px 24px 160px; */
-  }
 
-.nav-btn{
-    padding: 10px 25px 10px 25px;
-    border-radius: 8px;
-    border: 1.5px solid rgb(0, 106, 80);
-    color: rgb(0, 106, 80);
+.main-BG {
+  background-color: #f5f5f5;
+  margin: 0px;
+}
+
+.btn-animation {
+  animation: ease;
+  transition: 350ms;
+}
+
+.btn-animation:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ===== LAYOUT CONTAINER ===== */
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; /* changed from wrap to nowrap */
+  gap: 20px;
+}
+
+
+.nav-btn {
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 1.5px solid rgb(0, 106, 80);
+  color: rgb(0, 106, 80);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(198, 228, 214);
+  border-radius: 24px;
+  gap: 64px;
+  padding: 80px 40px;
+  margin-top: 20px;
+}
+
+.hero-contenet {
+  flex: 1 1 300px;
+}
+
+.hero-title {
+  color: rgba(14, 14, 14, 0.5);
+  font-family: Fira Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+}
+
+.hero-description {
+  color: rgb(14, 14, 14);
+  font-family: Fira Sans;
+  font-size: 50px;
+  line-height: 67px;
+  text-align: left;
+}
+
+.hero-button {
+  padding: 17px 34px;
+  border-radius: 8px;
+  background: rgb(0, 106, 80);
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* ===== IMPROVEMENT SECTION ===== */
+.improvement {
+  padding: 60px 0;
+}
+
+.pillar {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.improvement-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.improve {
+  background-color: white;
+  border-radius: 15px;
+  padding: 23px;
+  flex: 1 1 250px;
+  text-align: center;
+}
+
+.improvement-type {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+.paragraph-font {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* ===== VISION SECTION ===== */
+.vision {
+  padding: 60px 0;
+}
+
+.vision-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.vision-box-1,
+.vision-box-2,
+.vision-box-3 {
+  padding: 32px;
+  border-radius: 16px;
+  flex: 1 1 300px;
+}
+
+.vision-box-1 {
+  background-color: rgba(84, 144, 245, 0.2);
+}
+
+.vision-box-2 {
+  background-color: rgb(198, 228, 214);
+}
+
+.vision-box-3 {
+  background-color: rgb(247, 235, 207);
+}
+
+.vision-btn-1,
+.vision-btn-2,
+.vision-btn-3 {
+  border-radius: 8px;
+  padding: 10px 19px;
+  border: none;
+  margin-top: 30px;
+  color: white;
+  font-size: 13px;
+}
+
+.vision-btn-1 {
+  background-color: rgb(84, 144, 245);
+}
+
+.vision-btn-2 {
+  background-color: rgb(9, 161, 92);
+}
+
+.vision-btn-3 {
+  background-color: rgb(255, 194, 57);
+}
+
+/* ===== COMMENT SECTION ===== */
+.comment {
+  background-color: white;
+  padding: 48px 24px;
+  border-radius: 16px;
+  margin-top: 60px;
+}
+
+.comment-p1 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.commenter {
+  padding-top: 20px;
+}
+
+/* ===== RECENT NEWS SECTION ===== */
+.RN {
+  padding-top: 50px;
+}
+
+.RN-1,
+.RN-2,
+.RN-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  border-radius: 24px;
+  background-color: white;
+  padding: 38px;
+  margin-top: 32px;
+}
+
+.RN-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.RN-btn {
+  border-radius: 8px;
+  background-color: rgb(0, 106, 80);
+  padding: 11px 23px;
+  color: white;
+  margin-top: 29px;
+}
+
+.satelite {
+  border-radius: 24px;
+}
+
+/* ===== DONATION SECTION ===== */
+.donation {
+  padding: 50px 20px;
+  border-radius: 24px;
+  margin-top: 60px;
+  background-color: white;
+}
+
+.donataion-details {
+  text-align: center;
+}
+
+.donation-btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.donation-btn {
+  padding: 20px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 12px;
+  flex: 1 1 150px;
+}
+
+.donation-btn:hover {
+  background-color: green;
+  color: white;
+}
+
+.amount-input {
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 8px;
+  display: block;
+}
+
+.donation-btn-done {
+  font-size: 15px;
+  padding: 11px 23px;
+  border-radius: 8px;
+  background-color: rgb(0, 106, 80);
+  color: white;
+}
+
+/* ===== SUBSCRIBE SECTION ===== */
+.subscribe {
+  padding: 38px;
+  border-radius: 24px;
+  margin: 60px 0;
+  background-color: rgb(198, 228, 214);
+}
+
+.subscribe-details {
+  text-align: center;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.subscription-input {
+  padding: 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: none;
+  min-width: 250px;
+}
+
+.subscription-btn {
+  font-size: 16px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background-color: rgb(0, 106, 80);
+  color: white;
+  border: none;
+}
+
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background-color: white;
+  text-align: center;
+  padding: 70px 20px 20px;
+}
+
+.footer-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 20px;
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
     text-align: center;
-}
-.hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(198, 228, 214);
-    border-radius: 24px;
-    gap: 64px;
-    padding: 80px 100px 80px 100px;
-}
-.hero-title{
-    color: rgba(14, 14, 14, 0.5);
-    font-family: Fira Sans;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29px;
-    text-align: left;
-}
-.hero-description{
-    color: rgb(14, 14, 14);
-    font-family: Fira Sans;
-    font-size: 50px;
-    line-height: 67px;
-    text-align: left;
+    padding: 50px 20px;
+  }
 
-}
-.hero-button{
-    align-items: center;
-    gap: 48;
-    padding: 17px 34px 17px 34px;
-    border-radius: 8px;
-    background: rgb(0, 106, 80);
-    color: rgb(255, 255, 255);
-    border: none;
-}
-.improvement{
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.pillar{
-    font-size: 40px;
-    font-weight: 700;
-}
-.improvement-container{
-    display: flex;
-    gap: 20px;
-    
-}
-.improve{
-    background-color: white;
-    border-radius: 15px;
-    padding: 23px;
-}
-.improvement-type{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 24px;
-    margin-bottom: 12px;
+  .hero-description {
+    font-size: 36px;
+    line-height: 1.4;
+  }
 
-/* vision */
-}
-.vision{
-    display: flex;
+  .improvement-container,
+  .vision-container {
     flex-direction: column;
-    padding-bottom: 32px;
-}
-.vision-container{
-    display: flex;
-    gap: 24px;
-}
-.vision-box-1{
-    background-color: rgba(84, 144, 245, 0.2);
-    padding: 32px;
-    border-radius: 16px;
-}
-.vision-box-2{
-    background-color: rgb(198, 228, 214);
-    padding: 32px;
-    border-radius: 16px;
-}
-.vision-box-3{
-    background-color: rgb(247, 235, 207);
-    padding: 32px;
-    border-radius: 16px;
-}
-.vision-btn-1{
-    border-radius: 8px;
-    background-color: rgb(84, 144, 245);
-    padding: 10px 19px 10px 19px;
-    border: none;
-    margin-top: 30px;
-    color: white;
-    font-size: 13px;
-}
-.vision-btn-2{
-    border-radius: 8px;
-    background-color: rgb(9, 161, 92);
-    padding: 10px 19px 10px 19px;
-    border: none;
-    margin-top: 30px;
-    color: white;
-    font-size: 13px;
-}
-.vision-btn-3{
-    border-radius: 8px;
-    background-color: rgb(255, 194, 57);
-    padding: 10px 19px 10px 19px;
-    border: none;
-    margin-top: 30px;
-    color: white;
-    font-size: 13px;
-}
-.paragraph-font{
-    font-weight: 500;
-    font-size: 16px;
-}
-/* comment */
-.quote{
-    position: absolute;
-    size: 5000px;
-}
-.comment{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 24;
-    padding: 48px 24px 48px 24px;
-    border-radius: 16px;
-    background-color: white;
-}
-.comment-p1{
-    font-weight: 500;
-    font-size: 16px;
-}
-.commenter{
-    padding-top: 20px;
-    margin-bottom: -15px;
-}
-/* recent news */
-.RN{
-    padding-top: 50px;
-}
+  }
 
-.RN-1{
-    display: flex;
-    flex-direction: row;
-    gap: 22px;
-    border-radius: 24px;
-    background-color: white;
-    padding: 38px;
-    height: 402px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-}
+  .donation-btn-container {
+    padding: 0;
+  }
 
-.RN-2{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 22px;
-    border-radius: 24px;
-    background-color: white;
-    padding: 38px;
-    height: 402px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-}
-.RN-3{
-    display: flex;
-    flex-direction: row;
-    gap: 22px;
-    border-radius: 24px;
-    background-color: white;
-    padding: 38px;
-    height: 402px;
-    margin-top: 32px;
-    margin-bottom: 24px;
-}
-.RN-1-description{
-    display: flex;
+  .subscription {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-}
-.RN-2-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-}
-.RN-3-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 8px;
-}
-.RN-1-description span{ 
-    margin-left: 12px;
-}
-.RN-2-description span{
-    margin-left: 12px;
-}
-.RN-3-description span{
-    margin-left: 12px;
-}
-.RN-btn{
-    border-radius: 8px;
-    background-color: rgb(0, 106, 80);;
-    padding: 11px 23px 11px 23px;
-    border: none;
-    color: white;
-    font-size: 15px;
-    margin-top: 29px;
-}
-.satelite{
-    border-radius: 24px;
+  }
 
-}
-.RN-title{
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* donation */
-.donation{
-    padding: 0px 50px ;
-    border-radius: 24px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-}
-.donataion-details{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.donation-btn-container{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 10px;
-    padding: 0px 50px;
-}
-.donation-btn{
-    padding: 40px;
-    font-size: 30px;
+  .subscription-input,
+  .subscription-btn {
     width: 100%;
-    background-color: white;
-    border: none;
-    border-radius: 12px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-.donation-btn:hover{
-    background-color: green;
-    color: white;
-}
-.amount-input{
-    text-align: center;
-    padding: 15px;
-    margin-left: 90px;
-    margin-right: 90px;
-    font-size: 20px;
-    border: none;
-    margin-bottom: 20px;
-}
-.donation-btn-done{
-    font-size: 15px;
-    /* width: 100px; */
-    margin: 10px auto;
-    border-radius: 8px;
-    background-color: rgb(0, 106, 80);;
-    padding: 11px 23px 11px 23px;
-    border: none;
-    color: white;
+  }
 }
 
-/* subscribe */
-.subscribe{
-    padding: 38px ;
-    border-radius: 24px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    background-color: rgb(198, 228, 214);
-}
-.subscribe-details{
-    display: flex;
+@media (max-width: 768px) {
+  nav {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .RN-1,
+  .RN-2,
+  .RN-3 {
     flex-direction: column;
-    text-align: center;
-}
-.subscribe-title{
-    margin-bottom: -10px;
-}
-.subscribe-para{
-    margin-bottom: 70px;
-}
-.subscription{
-    gap: 0px;
-}
-.subscription-input{
-    text-align: center;
-    padding: 14px 300px 14px 30px;
-    font-size: 14px;
-    border: none;
-    margin-bottom: -20px;
-    border-radius: 8px 0px 0px 8px;
-    background-color: rgb(255, 255, 255);
-}
-.subscription-btn{
-    font-size: 16px;
-    padding: 13.5px 24px 12.5px 24px;
-    border: none;
-    border-radius: 0px 8px 8px 0px;
-    margin-left: -4px;
-    background-color: rgb(0, 106, 80);
-    color: white;
+    padding: 20px;
+  }
+
+  .footer-icon {
+    gap: 20px;
+  }
 }
 
-/* footer */
-.footer{
-    background-color: white;
-    text-align: center;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 70px;
-    padding-bottom: 20px;
-}
-.footer-icon{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    width: fit-content;
-    gap: 30px;
-    padding-top: 20px;
-}
-.footer-title{
-    font-size: 32px;
-    font-weight: 700;
+@media (max-width: 480px) {
+  .pillar {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 28px;
+  }
+
+  .paragraph-font,
+  .comment-p1 {
+    font-size: 15px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
 }
